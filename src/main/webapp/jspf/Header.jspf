@@ -1,0 +1,71 @@
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+       
+        
+
+        nav {
+            background-color: skyblue;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: #ff0000; /* Change this to your desired hover color */
+        }
+        img{
+        display: color; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container1">
+            <img alt="" src="../images/logo.png">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <br><br>
+    <!-- Rest of your website content goes here -->
+</body>
+

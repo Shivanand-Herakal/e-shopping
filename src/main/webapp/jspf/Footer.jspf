@@ -1,0 +1,137 @@
+<style>
+footer {
+  margin-top: 60px;
+  padding: 60px 0px 30px 0px;
+  background-color: pink;
+ 
+}
+
+
+footer .logo {
+  margin-bottom: 20px;
+ 
+}
+.row{
+display:flex;
+justify-content: space-around;
+}
+
+
+footer ul li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  font-size: 14px;
+  color: #fff;
+  transition: all .3s;
+}
+
+footer ul li a:hover {
+  color: #aaa;
+}
+
+footer h4 {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer .under-footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(250,250,250,0.3);
+}
+
+footer .under-footer ul {
+  margin-top: 20px;
+}
+
+footer .under-footer ul li {
+  display: flex;
+  margin: 0px 10px;
+}
+
+footer .under-footer ul li a {
+  font-size: 22px;
+}
+
+footer .under-footer p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer .under-footer a {
+  color: #cff;
+}
+
+footer .under-footer a:hover {
+  color: #c66;
+}
+
+</style>
+ 
+ <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="hexashop ecommerce templatemo" style="color:white">
+                        </div>
+                        <ul>
+                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Mens Shopping</a></li>
+                        <li><a href="#">Womens Shopping</a></li>
+                        <li><a href="#">Kids Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+    </footer>
+    
