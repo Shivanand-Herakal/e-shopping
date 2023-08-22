@@ -272,16 +272,18 @@ public class CustomerService {
 			Item item = null;
 			boolean flag = false;
 			for (Item item1 : items) {
-
 				if (item1.getId() == id) {
+					item = item1;
 					if (item1.getQuantity() > 1) {
-						item.setQuantity(item1.getQuantity() - 1);
+						item1.setPrice(item1.getPrice() - (item1.getPrice() / item1.getQuantity()));
+						item1.setQuantity(item1.getQuantity() - 1);
 						break;
 					} else {
 						flag = true;
 						break;
 					}
 				}
+
 			}
 			if (flag) {
 				items.remove(item);
@@ -294,8 +296,9 @@ public class CustomerService {
 			session.removeAttribute("customer");
 			session.setAttribute("customer", customerDao.save(customer));
 
-			map.put("pass", "Product Added Successful");
+			map.put("pass", "Product Removed from Cart Success");
 			return "CustomerHome";
+
 		}
 	}
 
@@ -370,7 +373,7 @@ public class CustomerService {
 		}
 
 	}
-
+//	rzp_test_WOkek02qzU8zkJShiva
 	public String viewWishlist(ModelMap model, HttpSession session) {
 		Customer customer = (Customer) session.getAttribute("customer");
 		if (customer == null) {
@@ -547,7 +550,7 @@ public class CustomerService {
 				order.setCurrency("INR");
 				order.setOrderId(order1.get("id"));
 				model.put("order", order);
-				model.put("key", "rzp_test_HirekalWOkek02qzU8zkJShiva");
+				model.put("key", "rzp_test_WOkek02qzU8zkJ");
 				return "ProceedToPay";
 			} else {
 				List<ShoppingOrder> list = customer.getOrders();

@@ -74,21 +74,21 @@ public class Merchantservice {
 	}
 
 	public String resendotp(String email, ModelMap map) {
-		Merchant merchant = merchantDao.findByEmail(email);
-		int otp = new Random().nextInt(100000, 999999);
-		merchant.setOtp(otp);
-
-		// logic for sending the mail
-		if (mail.sendotp(merchant)) {
-			Merchant merchant2 = merchantDao.save(merchant);
-			map.put("merchant", merchant2);
-			map.put("pass", "otp resend sucessfull");
-			return "SignupOtp";
-		} else {
-			map.put("fail", "Something went wrong");
-			return "Merchantsignup";
+			Merchant merchant = merchantDao.findByEmail(email);
+			int otp = new Random().nextInt(100000, 999999);
+			merchant.setOtp(otp);
+	
+			// logic for sending the mail
+			if (mail.sendotp(merchant)) {
+				Merchant merchant2 = merchantDao.save(merchant);
+				map.put("merchant", merchant2);
+				map.put("pass", "otp resend sucessfull");
+				return "SignupOtp";
+			} else {
+				map.put("fail", "Something went wrong");
+				return "Merchantsignup";
+			}
 		}
-	}
 
 	public String forgotpassword(String email, ModelMap map) {
 		Merchant merchant = merchantDao.findByEmail(email);
